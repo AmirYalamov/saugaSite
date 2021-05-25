@@ -1,0 +1,245 @@
+// @import
+// './pages/ContactPortal/ContactPortal.scss',
+// './pages/CreateAreas/CreateAreas.scss',
+// './pages/Map/Map.scss',
+// './pages/Login/Login.scss',
+// './pages/SignUpManager/SignUpManager.scss',
+// './pages/ViewContacts/ViewContacts.scss',
+// './pages/Dashboard/Dashboard.scss',
+// './pages/Settings/Settings.scss',
+// './pages/MessageApproval/MessageApproval.scss',
+// './pages/MessageManagement/MessageManagement.scss',
+// './pages/Messages/Messages.scss',
+// './pages/Message/Message.scss',
+// './pages/Account/Account.scss',
+// './pages/Plans/Plans.scss',
+// './pages/Addons/Addons.scss',
+// './pages/Teams/Teams.scss',
+// './pages/Team/Team.scss',
+// './pages/Subusers/Subusers.scss',
+// './pages/CreateSubuser/CreateSubuser.scss',
+// './pages/NoViewPermission/NoViewPermission.scss',
+// './pages/PrivacyPolicy/PrivacyPolicy.scss',
+// './pages/TermsOfUse/TermsOfUse.scss',
+// './components/NavigationBar_v2/NavigationBar.scss',
+// './components/AreaTable/AreaTable.scss',
+// './components/SendMessage/SendMessage.scss',
+// './components/ApprovalList/ApprovalList.scss',
+// './components/AddAddress/AddAddress.scss',
+// './components/Footer/Footer.scss',
+// './components/Header/Header.scss',
+// './components/MapToolkit/MapToolkit.scss',
+// './components/CreateFirst/CreateFirst.scss',
+// './components/ContactsTable/ContactsTable.scss',
+// './components/SelectContacts/SelectContacts.scss',
+// './pages/LandingPages/LandingPage/LandingPage.scss',
+// './pages/LandingPages/DemoPage/DemoPage.scss',
+// './pages/LandingPages/WhitePaperPage/WhitePaperPage.scss',
+// './pages/LandingPages/PricingPage/PricingPage.scss';
+
+body {
+  margin: 0px !important;
+  min-height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.app {
+
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+
+    $default-blue: #1a73e8;
+    $default-blue-dark: #0034b8;
+    $default-yellow: #FFC100;
+    $default-black: #000;
+    $default-white: #FFF;
+
+    .nav-content{
+      // padding-left: 36px;
+      // padding-left: 73px;
+    }
+
+    @media screen and (max-width: 600px){
+      .nav-content{
+        // padding-left: 28.5px;
+        // padding-left: 57px;
+      }
+    }
+
+    .primary-blue {
+      color: $default-blue !important;
+    }
+    .primary-blue-dark {
+      color: $default-blue-dark !important;
+    }
+
+    .primary-blue-bg {
+      background-color: $default-blue !important;
+    }
+    .primary-blue-dark-bg {
+      background-color: $default-blue-dark !important;
+    }
+
+    .gray-link-icon{
+
+      color: #737e92 !important;
+
+    }
+
+    .cansbridge-blue-bold {
+        color: $default-blue !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-black {
+        color: $default-black !important;
+    }
+
+    .cansbridge-black-bold {
+        color: $default-black !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-black-italic {
+        color: $default-black !important;
+        font-style: italic;
+    }
+
+    .cansbridge-yellow {
+        color: $default-yellow !important;
+    }
+
+    .cansbridge-yellow-bold {
+        color: $default-yellow !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-yellow-bold > a {
+        color: $default-yellow !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-white {
+        color: $default-white !important;
+    }
+
+    .cansbridge-white-bold {
+        color: $default-white !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-white-bold > a {
+        color: $default-white !important;
+        font-weight: bold;
+    }
+
+    .cansbridge-button-blue {
+        color: $default-white;
+        background-color: $default-blue;
+        border-color: $default-blue;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .cansbridge-button-yellow {
+        color: #000;
+        background-color: $default-yellow;
+        border-color: $default-yellow;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .cansbridge-button-black {
+        color: #FFF;
+        background-color: $default-black;
+        border-color: $default-black;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .cansbridge-header {
+        padding-top: 10%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: 200% 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (min-width: 992px) {
+
+        .cansbridge-header {
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    }
+
+
+
+
+    //defaults
+    //
+    //
+    // h1 {
+    //   display: block;
+    //   font-size: 2em;
+    //   margin-top: 0.67em;
+    //   margin-bottom: 0.67em;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   font-weight: bold;
+    // }
+    // h2 {
+    //   display: block;
+    //   font-size: 1.5em;
+    //   margin-top: 0.83em;
+    //   margin-bottom: 0.83em;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   font-weight: bold;
+    // }
+    // h3 {
+    //   display: block;
+    //   font-size: 1.17em;
+    //   margin-top: 1em;
+    //   margin-bottom: 1em;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   font-weight: bold;
+    // }
+    // h4 {
+    //   display: block;
+    //   font-size: 1em;
+    //   margin-top: 1.33em;
+    //   margin-bottom: 1.33em;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   font-weight: bold;
+    // }
+    // h5 {
+    //   display: block;
+    //   font-size: .83em;
+    //   margin-top: 1.67em;
+    //   margin-bottom: 1.67em;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   font-weight: bold;
+    // }
+    // p {
+    //   display: block;
+    //   margin-top: 0;
+    //   margin-bottom: 0;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    // }
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mississauga Active</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/" />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div id="render-target"></div>
+
+  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+  <script type="text/javascript">
+
+      mapkit.init({
+          authorizationCallback: function(done) {
+              done('eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlRKN1FWSFFIOEoifQ.eyJpc3MiOiI4VjZHTThYWjk4IiwiaWF0IjoxNjE4NjE2NzM4LCJleHAiOjE2NTAwNjcyMDB9.uKoVxpFEtOfOXJm89NUczmw6mZIo0SGIgpW4tMXAanWTATOLYOsytlO7zuP8nKzujkcEZBB23RWFHhwjoiwpXQ')
+          }
+      });
+
+      mapkit.addEventListener("error", function(event) {
+        console.log(event)
+        alert('An error occurred with maps, please refresh the page.')
+        switch (event.status) {
+        case "Initialized":
+            // MapKit JS initialized and configured.
+            break;
+        case "Refreshed":
+            // MapKit JS configuration updated.
+            break;
+        }
+    });
+  </script>
+
+</body>
+
+</html>
